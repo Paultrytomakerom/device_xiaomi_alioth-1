@@ -200,6 +200,9 @@ PRODUCT_PACKAGES += \
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/camera/camera_cnf.txt:$(TARGET_COPY_OUT_VENDOR)/etc/camera/camera_cnf.txt
 
+# Inherit Google Camera
+$(call inherit-product, vendor/GoogleCamera/config.mk)
+
 # Configstore
 PRODUCT_PACKAGES += \
     disable_configstore
