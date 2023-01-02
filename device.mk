@@ -200,7 +200,7 @@ PRODUCT_PACKAGES += \
     libpiex_shim
 
 # Inherit Google Camera
-$(call inherit-product, vendor/GoogleCamera/config.mk)
+$(call inherit-product-if-exists, vendor/GoogleCamera/config.mk) 
 
 # Configstore
 PRODUCT_PACKAGES += \
