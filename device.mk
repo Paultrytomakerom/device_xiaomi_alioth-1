@@ -198,8 +198,8 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     libpiex_shim
 
-# Inherit Google Camera
-$(call inherit-product-if-exists, vendor/GoogleCamera/config.mk) 
+PRODUCT_PACKAGES += \
+    Aperture
 
 # Configstore
 PRODUCT_PACKAGES += \
@@ -376,6 +376,7 @@ DEVICE_PACKAGE_OVERLAYS += \
     $(LOCAL_PATH)/overlay
 
 PRODUCT_PACKAGES += \
+    AliothApertureOverlay \
     AliothFrameworks \
     AliothSystemUI \
     SettingsProviderM2012K11AC \
